@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Comics World</title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+
+        <script src="./Js/Poster.js"></script>
+    </head>
+    <body>
+        <a-scene id="main-scene" background="color:#026F90">
+            
+            
+
+            <!--Camera-->
+            <a-camera wasd-controls="enabled:false;">
+                <a-entity
+                  id="app-title"
+                  text="font:exo2bold ; value:COMICS WORLD; color: #000;  align: center; width: 2"
+                  position="0 0.73 -1"
+                >
+                  <a-entity
+                    id="app-subtitle"
+                    position="0 -0.1 0"
+                    text="font: dejavu; align: center; width: 1; color: #0F184E; value: Comics Reading Time!"
+                  ></a-entity>
+                </a-entity>
+               
+                <a-cursor></a-cursor>
+            </a-camera>
+
+            <!--Container-->
+            <a-entity id="poster-container" poster></a-entity>
+        </a-scene>
+
+    </body>
+</html>
